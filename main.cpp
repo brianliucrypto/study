@@ -1,13 +1,17 @@
 #include "data_struct/SeqList.hpp"
 #include <iostream>
+
+#include "data_struct/LinkList.hpp"
 // TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 int main() {
-    SeqList<int> list;
-    list.Add(1);
-    list.Add(2);
-    list.Add(3);
-    list.Insert(1, 4); // 在索引1处插入元素4
-    list.Remove(2); // 删除索引2处的元素
+   LinkList<int> list;
+    list.Insert(0, 1);
+    list.Insert(1, 2);
+    list.Insert(2, 3);
+    list.Insert(3, 4);
+    list.Display();
+    int a;
+    list.Delete(3, a);
     list.Display();
     list.Reverse();
     list.Display();

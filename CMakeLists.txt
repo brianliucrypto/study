@@ -4,4 +4,5 @@ project(test)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(test main.cpp
-        data_struct/SeqList.hpp)
+        data_struct/SeqList.hpp
+        data_struct/LinkList.hpp)
