@@ -51,6 +51,7 @@ LinkList<T>::~LinkList() {
         delete m_head;
         m_head = temp;
     }
+    m_length = 0;
 }
 
 template<typename T>
